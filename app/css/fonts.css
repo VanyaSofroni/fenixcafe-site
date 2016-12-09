@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Pacifico/Pacifico.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/Pacifico/Pacifico.woff") format("woff"), 
+  url("../fonts/Pacifico/Pacifico.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ProximaNovaLight/ProximaNovaLight.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/ProximaNovaLight/ProximaNovaLight.woff") format("woff"), 
+  url("../fonts/ProximaNovaLight/ProximaNovaLight.ttf") format("truetype"); } 
+
+@font-face {
+  font-family: "CleanvertisingLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CleanvertisingLight/CleanvertisingLight.eot?#iefix") format("embedded-opentype"), url("../fonts/CleanvertisingLight/CleanvertisingLight.woff") format("woff"), url("../fonts/CleanvertisingLight/CleanvertisingLight.ttf") format("truetype");
+}
+

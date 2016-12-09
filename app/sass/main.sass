@@ -1,0 +1,514 @@
+@import "bourbon/bourbon"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader_gif.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 64px
+		width: 64px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "CleanvertisingLight", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+section, .main_header
+	position: relative
+section
+	z-index: 20
+	padding: 60px 0 75px
+.section_header
+	// animation-delay: 0.5s
+p
+	color: #667
+	font-family: "ProximaNovaLight", sans-serif
+	font-size: 14px
+	line-height: 27px
+	margin: 0 0 15px
+	padding: 0
+h2
+	font-family: "CleanvertisingLight", sans-serif
+	font-size: 45px
+	text-align: center
+	// text-transform: uppercase
+	letter-spacing: 2px
+	font-weight: normal
+	color: #222
+	opacity: 0.9
+	margin: 0 0 25px 0
+a
+	outline:none
+a:focus
+	outline:none
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+.hidden
+	display: none
+.main_color_bg
+	background-color: #39382E
+.main_header
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 620px
+	background: rgba(0,0,0, 0.2) no-repeat scroll
+.toggle_mnu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	right: 20px
+	top: 20px
+	background-color: #000
+	span
+		display: block
+	
+$w: 28px
+$h: 3px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block			
+	//transition-delay: 0.2s, 0s
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s		
+	transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+			transform: rotate(180deg)
+
+.main_menu
+	padding: 0
+	position: fixed
+	z-index: 100
+	background: rgba(0,0,0, 0.9) no-repeat scroll
+	height: 80px
+	width: 100%
+	border-top: 4px solid #e4ae60   
+	left: 0
+	right: 0
+	top: 0
+	transition: all 0.3s ease 0s
+	.nav
+		animation-delay: 0.5s
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		float: left
+		li
+			margin: 25px
+			display: inline-block
+			a
+				color: #fff
+				text-decoration: none
+				font-size: 16px
+				display: block
+				text-transform: uppercase
+				font-family: "CleanvertisingLight", sans-serif
+				font-weight: bold
+				letter-spacing: 2px
+				&:hover
+					border-bottom: 2px solid #e4ae60
+			&.current a
+				border-bottom: 2px solid #e4ae60
+.logo
+	width: 400px
+	height: 160px
+	position: absolute
+	left: 50%
+	top: 50%
+	margin: -80px 0 0 -200px
+	h1
+		font-family: "Pacifico"
+		font-size: 6.429em
+		text-decoration: none
+		color: #fff
+		margin: 0 10px
+		font-weight: normal
+		animation-delay: 0.5s
+.slider_container
+	position: relative
+	margin: 0
+	padding: 0
+	z-index: 21
+	.slider
+		padding: 0
+		margin: 0
+		box-shadow: 0 0 15px rgba(0,0,0,0.6)
+		.owl-prev, .owl-next
+			position: absolute
+			top: 33%
+			z-index: 25
+			width: 37px
+			height: 140px
+			opacity: .6
+			&:hover
+				opacity: .95
+		.owl-prev
+			left: 60px
+			background-image: url(../img/shape-left.png)
+		.owl-next
+			right: 60px
+			background-image: url(../img/shape-right.png)
+		.carousel
+			.bg_1, .bg_2, .bg_3		
+				display: block
+				height: 400px
+				width: 100%
+				background-repeat: no-repeat
+				background-attachment: scroll
+				background-size: cover
+				background-position: 50% 50%
+			.bg_1
+				background-image: url("../img/wall_1.jpg")
+			.bg_2
+				background-image: url("../img/wall_2.jpg")
+			.bg_3
+				background-image: url("../img/wall_3.jpg")	
+.about
+	background-color: #fff
+	h2
+		color: #354052 
+		font-family: "CleanvertisingLight", sans-serif
+		margin: 0
+		padding: 0
+		font-size: 40px
+		margin-bottom: 30px
+		font-weight: normal
+		letter-spacing: 2px
+		line-height: 35px
+	p
+		font-family: "ProximaNovaLight", sans-serif
+		font-size: 15px
+		color: #667
+		margin: 0
+		margin-bottom: 15px
+		padding: 0
+		line-height: 27px
+	p:nth-child(4)
+		margin-bottom: 0px
+.menu
+	background-color: #FAF8EA
+	.col_padding
+		padding: 0
+		.unit
+			margin: 15px 15px 0 0
+			padding: 0
+			img
+				width: 100%
+			.menu_description
+				position: absolute
+				top: 15px
+				left: 0
+				width: 95%
+				height: 93%
+				background-color: rgba(255,255,255,.83)
+				text-align: center
+				opacity: 0
+				padding: 0
+				padding-top: 20px
+				transition: all .5s
+				border: 1px solid #000
+				h4
+					color: #222
+					text-transform: uppercase
+					border-bottom: 2px solid #333
+					margin: 0 auto
+					width: 70%
+					font-family: "ProximaNovaLight",sans-serif
+					font-size: 14px
+					vertical-align: middle
+					font-weight: normal
+					padding-bottom: 30px
+					letter-spacing: 0.1px
+					line-height: 29px
+					opacity: 0.75
+				p
+					font-family: "ProximaNovaLight"
+					margin: 10px 0
+					padding: 0
+					font-size: 16px
+					letter-spacing: 0.5px
+					font-weight: bolder
+					line-height: 22px
+			.menu_description:hover
+				opacity: 1
+			.rolly_description
+				height: 92%
+				h4
+					width: 85%
+					padding-bottom: 18px
+			.burger_description
+				height: 91%
+				h4
+					width: 85%
+					padding-bottom: 1px
+			.dessert_description
+				height: 92%
+				h4
+					width: 85%
+					padding-bottom: 20px
+			.fruit_description
+				h4
+					width: 82%
+					padding-bottom: 18px
+			.softdrinks_description
+				h4
+					padding-bottom: 20px
+	h3
+		font-family: "CleanvertisingLight",sans-serif
+		font-size: 28px
+		text-align: center
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-weight: normal
+		color: #333
+		opacity: 0.8
+		margin: 30px 0 5px 0
+	.dostavka
+		margin-bottom: 65px
+	.menu_item
+		margin: 5px 0
+.img_position
+	position: absolute
+	z-index: 0
+	right: -1%
+	top: 3%
+	img
+		border: 0
+		width: 100%
+
+.advantages
+	background-color: #222222
+	.section_header
+		h2
+			color: #fff
+			margin-bottom: 30px
+	.section_content
+		.advantages_block 
+			.advantages_text
+				margin-bottom: 50px
+			img
+				max-width: 100%
+				border-radius: 50%
+			h3
+				font-family: "CleanvertisingLight",sans-serif
+				font-size: 28px
+				letter-spacing: 2px
+				font-weight: normal
+				color: #333
+				opacity: 0.8
+				margin: 0px 0 5px 0
+				color: #8AC302  
+			p
+				color: #fff			
+.reviews
+	background-repeat: no-repeat
+	background-size: cover
+	min-height: 620px	
+	background-color: rgba(0,0,0,.6)
+	h2
+		color: #fff
+	.carousel-2 .reviews_item
+		color: #fff
+		text-align: center
+		p
+			float: none
+			margin: 27px auto 0px
+			font-size: 16px
+			color: #e8e8e8
+			line-height: 30px
+		.image_wrap
+			text-align: center
+			img
+				width: 165px
+				height: 165px
+				text-align: center
+				display: inline-block
+				border-radius: 50%
+				border: #5a5c5c 3px solid
+		h4
+			font-family: "CleanvertisingLight"
+			font-size: 21px
+			font-style: italic
+			font-weight: normal
+			margin-top: 20px
+			margin-bottom: 20px
+		.hr
+			margin: 0 auto
+			width: 80px
+			height: 1px
+			background-color: #cea380	
+.reviews .owl-nav
+	.owl-prev
+		width: 37px
+		height: 140px
+		background-image: url(../img/shape-left.png)
+		top: 70px
+		position: absolute
+		opacity: .6
+		&:hover
+			opacity: .95
+	.owl-next
+		width: 37px
+		height: 140px
+		background-image: url(../img/shape-right.png)
+		top: 70px
+		position: absolute
+		right: 0px
+		opacity: .6
+		&:hover
+			opacity: .95
+.reviews .owl-dots
+	width: 100%
+	margin-top: 25px
+	text-align: center
+	.owl-dot
+		width: 15px
+		height: 15px
+		margin: 0 3px
+		background-color: #fff
+		display: inline-block
+		border-radius: 50%
+		opacity: .6
+		&.active
+			opacity: .95		
+.contacts
+	padding-bottom: 0
+	.map
+		min-height: 480px
+		background-color: #555
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.6)
+	.contact_map
+		position: absolute
+		z-index: 100
+		width: 310px
+		padding: 30px 20px
+		text-align: center
+		background-color: #FFFFEE
+		top: 40%
+		left: 77%
+		margin-left: -150px
+		box-shadow: 0 0 10px 5px rgba(0,0,0,0.1)
+	.adress
+		font-size: 18px
+		margin: 0
+		padding: 0
+		letter-spacing: 1px
+		margin-bottom: 5px
+		color: #e4ae60
+	.phone		
+		font-size: 20px
+		margin: 0
+		padding: 0
+		letter-spacing: 1px
+		margin-bottom: 10px
+		color: #667
+	.hr
+		width: 262px
+		height: 2px
+		background-color: #667
+		line-height: 0
+		font-size: 0
+		margin: 20px auto
+	.worktime	
+		color: #868582
+		font-size: 14px
+	.social
+		margin: 0
+		padding: 0
+		cursor: pointer
+		a
+			color: #667
+			font-size: 20px
+			margin-left: 10px
+			&:hover
+				color: #e4ae60
+.main_footer	
+	background-color: #222
+	position: relative
+	z-index: 20
+	padding: 50px 0 
+	font-family: "ProximaNovaLight"
+	color: #888
+	.button_up
+		float: right
+		line-height: 0
+		a
+			color: #888
+			font-size: 37px	
+			text-decoration: none
+			&:hover
+				color: #fff
+
+
+			
+
