@@ -1,0 +1,11 @@
+dist
+node_modules/
+.git/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf

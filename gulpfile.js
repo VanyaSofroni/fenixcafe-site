@@ -1,7 +1,7 @@
 var gulp       = require('gulp'), // Подключаем Gulp
 	sass         = require('gulp-sass'), //Подключаем Sass пакет,
 	browserSync  = require('browser-sync'), // Подключаем Browser Sync
-	concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
+	concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов html,css,js, т.е соединение их)
 	uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
 	cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
 	rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов

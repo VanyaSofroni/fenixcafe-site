@@ -95,6 +95,7 @@
 		text-align: center;
 	}
 }
+
 @media only screen and (max-width : 800px) {
 	.main_header .toggle_mnu{
 		display: block;
@@ -205,6 +206,7 @@
 		line-height: 30px;
 	}
 }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	section {
@@ -280,6 +282,7 @@
 		animation: none !important;
 	}*/
 }
+
 @media only screen and (max-width : 640px){
 	/*.menu .section_content .dostavka_container .img_position{
 		right: -19%;
@@ -314,6 +317,7 @@
 		margin-bottom: 15px;
 	}
 }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.menu .section_content .dostavka_container .img_position{

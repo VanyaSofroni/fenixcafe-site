@@ -1,12 +1,12 @@
 {
-  "name": "myproject",
+  "name": "fenixcafe-site",
   "version": "1.0.0",
-  "description": "My First Gulp Project",
+  "description": "landing page fenix cafe",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "Vanya Sofroni",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.11.1",
@@ -18,7 +18,7 @@
     "gulp-cssnano": "^2.1.1",
     "gulp-imagemin": "^2.4.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
+    "gulp-sass": "^3.1.0",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^4.2.2"
   }
